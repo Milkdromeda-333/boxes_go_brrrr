@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+:root {
+    --seal-brown: #582f0eff;
+    --russet: #7f4f24ff;
+    --coyote-brown: #936639ff;
+    --camel: #a68a64ff;
+    --khaki-web: #b6ad90ff;
+    --laurel-green: #c2c5aaff;
+    --laurel-green-2: #a4ac86ff;
+    --dark-olive-green: #656d4aff;
+    --rifle-green: #414833ff;
+    --kombu-green: #333d29ff;
+    --god: 'Nanum Brush Script', cursive;
+}
+
+body {
+    background-color: var(--kombu-green);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  box one */
+div:first-of-type {
+    transition: all 1s;
+}
+
+div:first-of-type:hover {
+    color: var(--camel);
+    letter-spacing: 10px;
+    border-right-color: var(--camel);
+}
+
+/* box two */
+
+div:nth-of-type(2) {
+    transition: all 2s ease-out;
+}
+
+div:nth-of-type(2):hover {
+    border: 5px solid var(--camel);
+    background-image: url(https://images.unsplash.com/photo-1560525821-d5615ef80c69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-position: 60% 30%;
+    background-size: fill;
+    background-repeat: no-repeat;
+    text-shadow: 4px 19px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 50px;
+}
+
+/* box three */
+div:nth-of-type(3) {
+    transition: all 1s ease-in;
+}
+
+div:nth-of-type(3):hover {
+    background-color: var(--seal-brown);
+    font-size: 50px;
+    width: 30%;
+    text-shadow: 4px 19px 2px rgba(0, 0, 0, 0.6);
+    transform: rotate(720deg)
+}
+
+/* box four */
+div:nth-of-type(4) {
+    transition: all ease-in .5s;
+}
+
+div:nth-of-type(4):hover {
+    border-right-color: var(--coyote-brown);
+    border-left-color: var(--coyote-brown);
+    text-shadow: 4px 6px 6px rgba(255, 255, 255, 0.6);
+    background-color: black;
+    border-radius: 100px;
+}
+
+/* box five */
+div:nth-of-type(5) {
+    transition: all ease-out .25s;
+}
+
+div:nth-of-type(5):hover {
+    box-shadow: 3px -3px 400px 179px rgba(0, 0, 0, 0.99);
+    -webkit-box-shadow: 3px -3px 400px 179px rgba(0, 0, 0, 0.99);
+    -moz-box-shadow: 3px -3px 400px 179px rgba(0, 0, 0, 0.99);
+    font-size: 80px;
+    font-family: var(--god);
+    border: none;
+    background-color: black;
+    width: 100%;
+    cursor: help;
+    letter-spacing: 15px;
+}
+
+/* box six */
+div:nth-of-type(6) {
+    transition: all 1s;
+}
+
+div:nth-of-type(6):hover {
+    border: 3px solid var(--rifle-green);
+    cursor: grab;
+    letter-spacing: 10px;
+    opacity: .5%;
+
+}
